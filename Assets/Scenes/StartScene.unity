@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 835681879}
   - component: {fileID: 835681881}
   m_Layer: 0
-  m_Name: protoshits
+  m_Name: StartImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
