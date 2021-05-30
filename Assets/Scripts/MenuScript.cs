@@ -7,7 +7,7 @@ public class MenuScript : MonoBehaviour
 {
     public void StartTheGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("CharacterSelectionScene");
     }
 
     public void EndTheGame()
