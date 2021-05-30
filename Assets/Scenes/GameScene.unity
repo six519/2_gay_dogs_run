@@ -253,7 +253,9 @@ MonoBehaviour:
   BackgroundRender: {fileID: 1385358702}
   BackgroundMusic: {fileID: 1845519128}
   CloudOne: {fileID: 4339495398069690463, guid: 40e62f6243f51b941b21fd6407bb8119, type: 3}
-  RespawnTime: 3
+  CloudTwo: {fileID: 7821677089272140863, guid: 42a347d4a3a6bef40b925a1bdef08038, type: 3}
+  RespawnTimeCloudOne: 3
+  RespawnTimeCloudTwo: 2.5
 --- !u!1 &1385358701
 GameObject:
   m_ObjectHideFlags: 0
