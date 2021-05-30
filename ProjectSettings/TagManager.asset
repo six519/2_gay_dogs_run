@@ -41,6 +41,9 @@ TagManager:
   - name: bg
     uniqueID: 414692455
     locked: 0
+  - name: clouds
+    uniqueID: 813346087
+    locked: 0
   - name: dog
     uniqueID: 3766128215
     locked: 0
