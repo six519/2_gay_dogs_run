@@ -9,8 +9,10 @@ public class ControllerScript : MonoBehaviour
     public AudioSource BackgroundMusic;
     public GameObject CloudOne;
     public GameObject CloudTwo;
+    public GameObject CloudThree;
     public float RespawnTimeCloudOne = 3.0f;
     public float RespawnTimeCloudTwo = 2.5f;
+    public float RespawnTimeCloudThree = 5.0f;
     private Vector2 ScreenBounds;
     void Start()
     {
@@ -18,6 +20,7 @@ public class ControllerScript : MonoBehaviour
         ScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         StartCoroutine(ShowCloudOne());
         StartCoroutine(ShowCloudTwo());
+        StartCoroutine(ShowCloudThree());
     }
 
     void Update()
@@ -38,6 +41,11 @@ public class ControllerScript : MonoBehaviour
         c2.transform.position = new Vector2(-10, Random.Range(-2, 5));
     }
 
+    private void SpawnCloudThree()
+    {
+        GameObject c3 = Instantiate(CloudThree);
+        c3.transform.position = new Vector2(-10, Random.Range(-2, 5));
+    }
 
     IEnumerator ShowCloudOne()
     {
@@ -54,6 +62,15 @@ public class ControllerScript : MonoBehaviour
         {
             yield return new WaitForSeconds(RespawnTimeCloudTwo);
             SpawnCloudTwo();
+        }
+    }
+
+    IEnumerator ShowCloudThree()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(RespawnTimeCloudThree);
+            SpawnCloudThree();
         }
     }
 }
