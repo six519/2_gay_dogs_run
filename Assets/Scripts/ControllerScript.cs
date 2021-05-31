@@ -21,6 +21,8 @@ public class ControllerScript : MonoBehaviour
         StartCoroutine(ShowCloudOne());
         StartCoroutine(ShowCloudTwo());
         StartCoroutine(ShowCloudThree());
+        Debug.Log("The selection is:");
+        Debug.Log(GlobalVariableScript.SelectedCharacter);
     }
 
     void Update()

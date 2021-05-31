@@ -59,8 +59,10 @@
     <Compile Include="Assets\Scripts\MainScript.cs" />
     <Compile Include="Assets\Scripts\MenuScript.cs" />
     <Compile Include="Assets\Scripts\CloudScript.cs" />
+    <Compile Include="Assets\Scripts\CharacterSelectionScript.cs" />
     <Compile Include="Assets\Scripts\StartScript.cs" />
     <Compile Include="Assets\Scripts\ControllerScript.cs" />
+    <Compile Include="Assets\Scripts\GlobalVariableScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
