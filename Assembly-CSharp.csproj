@@ -58,13 +58,14 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MainScript.cs" />
     <Compile Include="Assets\Scripts\BidaScript.cs" />
+    <Compile Include="Assets\Scripts\StartButtonScript.cs" />
     <Compile Include="Assets\Scripts\CloudScript.cs" />
     <Compile Include="Assets\Scripts\CharacterSelectionScript.cs" />
     <Compile Include="Assets\Scripts\StartScript.cs" />
     <Compile Include="Assets\Scripts\GlobalVariableScript.cs" />
     <Compile Include="Assets\Scripts\ControllerScript.cs" />
-    <Compile Include="Assets\Scripts\StartButtonScript.cs" />
     <Compile Include="Assets\Scripts\ExitButtonScript.cs" />
+    <Compile Include="Assets\Scripts\BackCloseButtonScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
