@@ -14,10 +14,12 @@ public class ControllerScript : MonoBehaviour
     public float RespawnTimeCloudTwo = 2.5f;
     public float RespawnTimeCloudThree = 5.0f;
     private Vector2 ScreenBounds;
+    private TextMesh ScoreTextMesh;
     void Start()
     {
         BackgroundMusic.Play();
         ScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+        ScoreTextMesh = GameObject.Find("Score").GetComponent<TextMesh>();
         StartCoroutine(ShowCloudOne());
         StartCoroutine(ShowCloudTwo());
         StartCoroutine(ShowCloudThree());
@@ -26,6 +28,8 @@ public class ControllerScript : MonoBehaviour
     void Update()
     {
         BackgroundRender.material.mainTextureOffset -= new Vector2(BackgroundSpeed * Time.deltaTime, 0f);
+        //Show score
+        ScoreTextMesh.text = "Score:" + GlobalVariableScript.GameScore;
     }
 
 
