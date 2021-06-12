@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 public class StartScript : MonoBehaviour
 {
     public float timeToSwitch = 5.0f;
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         timeToSwitch -= Time.deltaTime;

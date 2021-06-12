@@ -5,7 +5,6 @@ using UnityEngine;
 public class BidaScript : MonoBehaviour
 {
     private Animator thisAnimator;
-    // Start is called before the first frame update
     void Start()
     {
         thisAnimator = this.GetComponent<Animator>();
@@ -19,10 +18,5 @@ public class BidaScript : MonoBehaviour
             thisAnimator.runtimeAnimatorController = Resources.Load("2_1") as RuntimeAnimatorController;
         }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 }

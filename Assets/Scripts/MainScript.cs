@@ -9,10 +9,4 @@ public class MainScript : MonoBehaviour
     {
         BackgroundMusic.Play();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
