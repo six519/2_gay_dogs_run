@@ -10,6 +10,8 @@ public class ControllerScript : MonoBehaviour
     public GameObject CloudOne;
     public GameObject CloudTwo;
     public GameObject CloudThree;
+    public GameObject[] Hearts;
+    public GameObject Heart;
     public float RespawnTimeCloudOne = 3.0f;
     public float RespawnTimeCloudTwo = 2.5f;
     public float RespawnTimeCloudThree = 5.0f;
@@ -23,6 +25,16 @@ public class ControllerScript : MonoBehaviour
         StartCoroutine(ShowCloudOne());
         StartCoroutine(ShowCloudTwo());
         StartCoroutine(ShowCloudThree());
+
+        Hearts = new GameObject[GlobalVariableScript.GameLives];
+        float heart_x = -6.2f;
+        for (int num=0; num < 3; num++)
+        {
+            GameObject go = Instantiate(Heart);
+            go.transform.position = new Vector2(heart_x, 3.8f);
+            heart_x += 0.75f;
+            Hearts[num] = go;
+        }
     }
 
     void Update()

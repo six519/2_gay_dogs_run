@@ -395,10 +395,11 @@ MonoBehaviour:
   CloudOne: {fileID: 4339495398069690463, guid: 40e62f6243f51b941b21fd6407bb8119, type: 3}
   CloudTwo: {fileID: 7821677089272140863, guid: 42a347d4a3a6bef40b925a1bdef08038, type: 3}
   CloudThree: {fileID: 3326391631052156029, guid: 60a2bae495b6f6145b8288f4c0168c99, type: 3}
+  Hearts: []
+  Heart: {fileID: 3137270299346489415, guid: 6cdb00a4ddd810f4381930aeb1ff0e74, type: 3}
   RespawnTimeCloudOne: 3
   RespawnTimeCloudTwo: 2.5
   RespawnTimeCloudThree: 5
-  ScoreText: {fileID: 1474080095}
 --- !u!114 &1173278421
 MonoBehaviour:
   m_ObjectHideFlags: 0
