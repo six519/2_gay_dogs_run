@@ -19,8 +19,11 @@ public class ControllerScript : MonoBehaviour
     public float RespawnTimeLoot = 1.5f;
     private Vector2 ScreenBounds;
     private TextMesh ScoreTextMesh;
+    private float PrevAddSpeed;
+    private float Multiplier = 0;
     void Start()
     {
+        PrevAddSpeed = GlobalVariableScript.AdditionalSpeed;
         BackgroundMusic.Play();
         ScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         ScoreTextMesh = GameObject.Find("Score").GetComponent<TextMesh>();
@@ -42,7 +45,16 @@ public class ControllerScript : MonoBehaviour
 
     void Update()
     {
-        BackgroundRender.material.mainTextureOffset -= new Vector2(BackgroundSpeed * Time.deltaTime, 0f);
+
+        if (PrevAddSpeed != GlobalVariableScript.AdditionalSpeed)
+        {
+            PrevAddSpeed = GlobalVariableScript.AdditionalSpeed;
+            Multiplier += 1f;
+        }
+
+        float speedNegator = 0.30f * Multiplier;
+
+        BackgroundRender.material.mainTextureOffset -= new Vector2((BackgroundSpeed + (PrevAddSpeed - speedNegator)) * Time.deltaTime, 0f);
         //Show score
         ScoreTextMesh.text = "Score:" + GlobalVariableScript.GameScore;
     }
@@ -76,7 +88,8 @@ public class ControllerScript : MonoBehaviour
     {
         while(true)
         {
-            yield return new WaitForSeconds(RespawnTimeCloudOne);
+            float timeNegator = 0.35f * Multiplier;
+            yield return new WaitForSeconds(RespawnTimeCloudOne - (PrevAddSpeed - timeNegator));
             SpawnCloudOne();
         }
     }
@@ -85,7 +98,8 @@ public class ControllerScript : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(RespawnTimeCloudTwo);
+            float timeNegator = 0.35f * Multiplier;
+            yield return new WaitForSeconds(RespawnTimeCloudTwo - (PrevAddSpeed - timeNegator));
             SpawnCloudTwo();
         }
     }
@@ -94,7 +108,8 @@ public class ControllerScript : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(RespawnTimeCloudThree);
+            float timeNegator = 0.35f * Multiplier;
+            yield return new WaitForSeconds(RespawnTimeCloudThree - (PrevAddSpeed - timeNegator));
             SpawnCloudThree();
         }
     }
@@ -103,7 +118,8 @@ public class ControllerScript : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(RespawnTimeLoot);
+            float timeNegator = 0.10f * Multiplier;
+            yield return new WaitForSeconds(RespawnTimeLoot - (PrevAddSpeed - timeNegator));
             SpawnLoot();
         }
     }

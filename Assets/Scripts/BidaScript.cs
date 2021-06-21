@@ -8,11 +8,15 @@ public class BidaScript : MonoBehaviour
     private Rigidbody2D rb;
     public AudioSource BarkSound;
     private float previousAnimSpeed;
+    private float baseAnimSpeed;
     private bool canJump = true;
+    private float PrevAddSpeed;
     void Start()
     {
+        PrevAddSpeed = GlobalVariableScript.AdditionalSpeed;
         thisAnimator = this.GetComponent<Animator>();
         previousAnimSpeed = thisAnimator.speed;
+        baseAnimSpeed = previousAnimSpeed;
         rb = this.GetComponent<Rigidbody2D>();
         Physics2D.IgnoreCollision(GameObject.Find("close").GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
 
@@ -22,6 +26,20 @@ public class BidaScript : MonoBehaviour
         } else
         {
             thisAnimator.runtimeAnimatorController = Resources.Load("2_1") as RuntimeAnimatorController;
+        }
+    }
+
+    private void Update()
+    {
+        if (PrevAddSpeed != GlobalVariableScript.AdditionalSpeed)
+        {
+            PrevAddSpeed = GlobalVariableScript.AdditionalSpeed;
+            previousAnimSpeed = baseAnimSpeed + PrevAddSpeed;
+
+            if (canJump)
+            {
+                thisAnimator.speed = baseAnimSpeed + PrevAddSpeed;
+            }
         }
     }
 
