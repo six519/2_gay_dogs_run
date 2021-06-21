@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\BackCloseButtonScript.cs" />
     <Compile Include="Assets\Scripts\ControllerScript.cs" />
     <Compile Include="Assets\Scripts\ExitButtonScript.cs" />
+    <Compile Include="Assets\Scripts\LootScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -43,6 +43,9 @@ public class BidaScript : MonoBehaviour
         {
             thisAnimator.speed = previousAnimSpeed;
             canJump = true;
+        } else if (collision.gameObject.tag == "LOOT")
+        {
+            Destroy(collision.gameObject);
         }
     }
 }

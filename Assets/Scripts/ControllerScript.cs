@@ -12,9 +12,11 @@ public class ControllerScript : MonoBehaviour
     public GameObject CloudThree;
     public GameObject[] Hearts;
     public GameObject Heart;
+    public GameObject Loot;
     public float RespawnTimeCloudOne = 3.0f;
     public float RespawnTimeCloudTwo = 2.5f;
     public float RespawnTimeCloudThree = 5.0f;
+    public float RespawnTimeLoot = 1.5f;
     private Vector2 ScreenBounds;
     private TextMesh ScoreTextMesh;
     void Start()
@@ -25,6 +27,7 @@ public class ControllerScript : MonoBehaviour
         StartCoroutine(ShowCloudOne());
         StartCoroutine(ShowCloudTwo());
         StartCoroutine(ShowCloudThree());
+        StartCoroutine(ShowLoot());
 
         Hearts = new GameObject[GlobalVariableScript.GameLives];
         float heart_x = -6.2f;
@@ -63,6 +66,12 @@ public class ControllerScript : MonoBehaviour
         c3.transform.position = new Vector2(-10, Random.Range(-2, 5));
     }
 
+    private void SpawnLoot()
+    {
+        GameObject l = Instantiate(Loot);
+        l.transform.position = new Vector2(-10, Random.Range(-4, 2));
+    }
+
     IEnumerator ShowCloudOne()
     {
         while(true)
@@ -87,6 +96,15 @@ public class ControllerScript : MonoBehaviour
         {
             yield return new WaitForSeconds(RespawnTimeCloudThree);
             SpawnCloudThree();
+        }
+    }
+
+    IEnumerator ShowLoot()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(RespawnTimeLoot);
+            SpawnLoot();
         }
     }
 }

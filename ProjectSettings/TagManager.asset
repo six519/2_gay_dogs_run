@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CLOSE_BUTTON
   - INVI_PLATFORM
+  - LOOT
+  - BIDA
   layers:
   - Default
   - TransparentFX

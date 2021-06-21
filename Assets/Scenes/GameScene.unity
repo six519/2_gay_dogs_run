@@ -546,9 +546,11 @@ MonoBehaviour:
   CloudThree: {fileID: 3326391631052156029, guid: 60a2bae495b6f6145b8288f4c0168c99, type: 3}
   Hearts: []
   Heart: {fileID: 3137270299346489415, guid: 6cdb00a4ddd810f4381930aeb1ff0e74, type: 3}
+  Loot: {fileID: 2581448499494937881, guid: a2827929e6ee3ee4cbd486473a7c8798, type: 3}
   RespawnTimeCloudOne: 3
   RespawnTimeCloudTwo: 2.5
   RespawnTimeCloudThree: 5
+  RespawnTimeLoot: 4
 --- !u!114 &1173278421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,7 +620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6569122932427147385, guid: 6d776180aa1dd3342a1fe2601d801fe4, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: BIDA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d776180aa1dd3342a1fe2601d801fe4, type: 3}
