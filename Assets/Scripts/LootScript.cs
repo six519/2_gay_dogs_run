@@ -62,6 +62,7 @@ public class LootScript : MonoBehaviour
                 case 4000:
                 case 9000:
                     GlobalVariableScript.AdditionalSpeed += 0.50f;
+                    GlobalVariableScript.GlobMultiplier += 1f;
                     break;
             }
 

@@ -13,10 +13,12 @@ public class ControllerScript : MonoBehaviour
     public GameObject[] Hearts;
     public GameObject Heart;
     public GameObject Loot;
+    public GameObject Arrow;
     public float RespawnTimeCloudOne = 3.0f;
     public float RespawnTimeCloudTwo = 2.5f;
     public float RespawnTimeCloudThree = 5.0f;
     public float RespawnTimeLoot = 1.5f;
+    public float RespawnTimeArrow = 4f;
     private Vector2 ScreenBounds;
     private TextMesh ScoreTextMesh;
     private float PrevAddSpeed;
@@ -31,10 +33,30 @@ public class ControllerScript : MonoBehaviour
         StartCoroutine(ShowCloudTwo());
         StartCoroutine(ShowCloudThree());
         StartCoroutine(ShowLoot());
+        StartCoroutine(ShowArrow());
 
         Hearts = new GameObject[GlobalVariableScript.GameLives];
         float heart_x = -6.2f;
         for (int num=0; num < 3; num++)
+        {
+            GameObject go = Instantiate(Heart);
+            go.transform.position = new Vector2(heart_x, 3.8f);
+            heart_x += 0.75f;
+            Hearts[num] = go;
+        }
+    }
+
+    public void UpdateHearts()
+    {
+        //Destroy hearts first
+        for (int num=0; num < GlobalVariableScript.GameLives + 1; num++)
+        {
+            Destroy(Hearts[num]);
+        }
+
+        //Redraw hearts
+        float heart_x = -6.2f;
+        for (int num = 0; num < GlobalVariableScript.GameLives; num++)
         {
             GameObject go = Instantiate(Heart);
             go.transform.position = new Vector2(heart_x, 3.8f);
@@ -84,6 +106,11 @@ public class ControllerScript : MonoBehaviour
         l.transform.position = new Vector2(-10, Random.Range(-4, 2));
     }
 
+    private void SpawnArrow()
+    {
+        Instantiate(Arrow);
+    }
+
     IEnumerator ShowCloudOne()
     {
         while(true)
@@ -121,6 +148,16 @@ public class ControllerScript : MonoBehaviour
             float timeNegator = 0.10f * Multiplier;
             yield return new WaitForSeconds(RespawnTimeLoot - (PrevAddSpeed - timeNegator));
             SpawnLoot();
+        }
+    }
+
+    IEnumerator ShowArrow()
+    {
+        while (true)
+        {
+            float timeNegator = 0.10f * Multiplier;
+            yield return new WaitForSeconds(RespawnTimeArrow - (PrevAddSpeed - timeNegator));
+            SpawnArrow();
         }
     }
 }

@@ -547,6 +547,7 @@ MonoBehaviour:
   Hearts: []
   Heart: {fileID: 3137270299346489415, guid: 6cdb00a4ddd810f4381930aeb1ff0e74, type: 3}
   Loot: {fileID: 2581448499494937881, guid: a2827929e6ee3ee4cbd486473a7c8798, type: 3}
+  Arrow: {fileID: 2649874135940039965, guid: 60ac22119df61d140a1745a2f259728e, type: 3}
   RespawnTimeCloudOne: 3
   RespawnTimeCloudTwo: 2.5
   RespawnTimeCloudThree: 5

@@ -61,12 +61,14 @@
     <Compile Include="Assets\Scripts\StartButtonScript.cs" />
     <Compile Include="Assets\Scripts\CloudScript.cs" />
     <Compile Include="Assets\Scripts\CharacterSelectionScript.cs" />
+    <Compile Include="Assets\Scripts\LootScript.cs" />
     <Compile Include="Assets\Scripts\StartScript.cs" />
     <Compile Include="Assets\Scripts\GlobalVariableScript.cs" />
     <Compile Include="Assets\Scripts\BackCloseButtonScript.cs" />
     <Compile Include="Assets\Scripts\ControllerScript.cs" />
     <Compile Include="Assets\Scripts\ExitButtonScript.cs" />
-    <Compile Include="Assets\Scripts\LootScript.cs" />
+    <Compile Include="Assets\Scripts\ArrowScript.cs" />
+    <Compile Include="Assets\Scripts\GameOverScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

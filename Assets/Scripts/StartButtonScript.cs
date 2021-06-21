@@ -11,6 +11,7 @@ public class StartButtonScript : MonoBehaviour
         GlobalVariableScript.GameScore = 0;
         GlobalVariableScript.GameLives = 3;
         GlobalVariableScript.AdditionalSpeed = 0;
+        GlobalVariableScript.GlobMultiplier = 0;
         //goto character selection screen
         SceneManager.LoadScene("CharacterSelectionScene");
     }
