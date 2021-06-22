@@ -552,6 +552,7 @@ MonoBehaviour:
   RespawnTimeCloudTwo: 2.5
   RespawnTimeCloudThree: 5
   RespawnTimeLoot: 4
+  RespawnTimeArrow: 4
 --- !u!114 &1173278421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,8 +701,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385358701}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 13.34, y: 10.005899, z: 1}
+  m_LocalPosition: {x: 0, y: 1.66, z: 0}
+  m_LocalScale: {x: 17.920757, y: 13.441776, z: 1.3433851}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
