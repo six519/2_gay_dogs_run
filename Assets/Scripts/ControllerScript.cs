@@ -85,25 +85,25 @@ public class ControllerScript : MonoBehaviour
     private void SpawnCloudOne()
     {
         GameObject c1 = Instantiate(CloudOne);
-        c1.transform.position = new Vector2(-10, Random.Range(-2, 5));
+        c1.transform.position = new Vector2(-15, Random.Range(-2, 5));
     }
 
     private void SpawnCloudTwo()
     {
         GameObject c2 = Instantiate(CloudTwo);
-        c2.transform.position = new Vector2(-10, Random.Range(-2, 5));
+        c2.transform.position = new Vector2(-15, Random.Range(-2, 5));
     }
 
     private void SpawnCloudThree()
     {
         GameObject c3 = Instantiate(CloudThree);
-        c3.transform.position = new Vector2(-10, Random.Range(-2, 5));
+        c3.transform.position = new Vector2(-15, Random.Range(-2, 5));
     }
 
     private void SpawnLoot()
     {
         GameObject l = Instantiate(Loot);
-        l.transform.position = new Vector2(-10, Random.Range(-4, 2));
+        l.transform.position = new Vector2(-15, Random.Range(-4, 2));
     }
 
     private void SpawnArrow()
