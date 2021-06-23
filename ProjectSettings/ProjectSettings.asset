@@ -578,11 +578,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: com.ferdinandsilva.dogs
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\ferdi\Workspace\2 Gay Dogs Run\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: ferdinandsilva.com
+  metroCertificateIssuer: ferdinandsilva.com
+  metroCertificateNotAfter: 004407a9c386d801
   metroApplicationDescription: A simple casual runner game
   wsaImages:
     65636: Assets/Images/50.png
