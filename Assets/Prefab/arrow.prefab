@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -22556900743956263}
   - component: {fileID: 6956990546993851714}
   - component: {fileID: 9038631286148608519}
+  - component: {fileID: 5720278665990749052}
   m_Layer: 0
   m_Name: arrow
   m_TagString: Untagged
@@ -147,6 +148,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 9
   AwSound: {fileID: 891444970461107285}
+  Blood: {fileID: 5963143541940854664, guid: fcaf6ae25145f3748a08c2a0d78a019b, type: 3}
+--- !u!114 &5720278665990749052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2649874135940039965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a29f8b043e05c4dae0fa2cac85d7bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5763778204486530827
 GameObject:
   m_ObjectHideFlags: 0

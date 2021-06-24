@@ -11,9 +11,23 @@ public class ArrowScript : MonoBehaviour
     private float PrevAddSpeed;
     public AudioSource AwSound;
     private float additionalSpeed = 3f;
+    public GameObject Blood;
 
     void Start()
     {
+        ParticleSystem ps = Blood.GetComponent<ParticleSystem>();
+
+        if (GlobalVariableScript.SelectedCharacter == 0)
+        {
+            var main = ps.main;
+            main.startColor = Color.red;
+        }
+        else
+        {
+            var main = ps.main;
+            main.startColor = Color.green;
+        }
+
         PrevAddSpeed = GlobalVariableScript.AdditionalSpeed;
         ThisRigidBody = this.GetComponent<Rigidbody2D>();
 
@@ -40,22 +54,24 @@ public class ArrowScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "BIDA")
         {
-            this.gameObject.transform.position = new Vector2(-10, 6); //move the object outside the screen
-            AwSound.Play();
             GlobalVariableScript.GameLives -= 1;
-
 
             if (GlobalVariableScript.GameLives == 0)
             {
                 SceneManager.LoadScene("GameOver");
-            }
-
-            ControllerScript cs = GameObject.Find("Controller").GetComponent<ControllerScript>();
-            cs.UpdateHearts();
-
-            while (!AwSound.isPlaying)
+            } else
             {
-                Destroy(this.gameObject);
+                GameObject blood = Instantiate(Blood);
+                blood.gameObject.transform.position = this.gameObject.transform.position;
+                this.gameObject.transform.position = new Vector2(-10, 6); //move the object outside the screen
+                AwSound.Play();
+                ControllerScript cs = GameObject.Find("Controller").GetComponent<ControllerScript>();
+                cs.UpdateHearts();
+
+                while (!AwSound.isPlaying)
+                {
+                    Destroy(this.gameObject);
+                }
             }
         }
     }
