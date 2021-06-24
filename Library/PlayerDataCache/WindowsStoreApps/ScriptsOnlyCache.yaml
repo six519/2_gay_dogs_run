@@ -18,6 +18,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -65,13 +66,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 3028}
+      Script: {instanceID: 3036}
     - Class: 114
-      Script: {instanceID: 3908}
+      Script: {instanceID: 3916}
     - Class: 114
-      Script: {instanceID: 4646}
+      Script: {instanceID: 4654}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -110,11 +111,11 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 3908}
+      Script: {instanceID: 3916}
     - Class: 114
-      Script: {instanceID: 4436}
+      Script: {instanceID: 4444}
     - Class: 114
-      Script: {instanceID: 4646}
+      Script: {instanceID: 4654}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -167,19 +168,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1642}
+      Script: {instanceID: 1650}
     - Class: 114
-      Script: {instanceID: 2874}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 3342}
+      Script: {instanceID: 3350}
     - Class: 114
-      Script: {instanceID: 3432}
+      Script: {instanceID: 3440}
     - Class: 114
-      Script: {instanceID: 3908}
+      Script: {instanceID: 3916}
     - Class: 114
-      Script: {instanceID: 4646}
+      Script: {instanceID: 4654}
     - Class: 114
-      Script: {instanceID: 4982}
+      Script: {instanceID: 4990}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -218,11 +219,11 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 5382}
+      Script: {instanceID: 5390}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -255,7 +256,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 3408}
+      Script: {instanceID: 3416}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -874,4 +875,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/GameScene.unity
   - Assets/Scenes/CharacterSelectionScene.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: C:/Users/ferdi/Downloads/uwp
+  playerPath: C:/Users/ferdi/Downloads
