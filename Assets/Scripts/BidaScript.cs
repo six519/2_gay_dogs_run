@@ -11,6 +11,7 @@ public class BidaScript : MonoBehaviour
     private float baseAnimSpeed;
     private bool canJump = true;
     private float PrevAddSpeed;
+    public ParticleSystem dust;
     void Start()
     {
         PrevAddSpeed = GlobalVariableScript.AdditionalSpeed;
@@ -47,6 +48,7 @@ public class BidaScript : MonoBehaviour
     {
         if (canJump)
         {
+            ShowDust();
             float jumpVelocity = 23.5f;
             rb.velocity = Vector2.up * jumpVelocity;
             BarkSound.Play();
@@ -65,5 +67,10 @@ public class BidaScript : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+    }
+
+    private void ShowDust()
+    {
+        dust.Play();
     }
 }
