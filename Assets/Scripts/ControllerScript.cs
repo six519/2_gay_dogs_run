@@ -36,6 +36,16 @@ public class ControllerScript : MonoBehaviour
         StartCoroutine(ShowArrow());
 
         Hearts = new GameObject[GlobalVariableScript.GameLives];
+
+        if (GlobalVariableScript.SelectedCharacter == 0)
+        {
+            Heart.GetComponent<SpriteRenderer>().sprite = Resources.Load("heart_resize", typeof(Sprite)) as Sprite;
+        }
+        else
+        {
+            Heart.GetComponent<SpriteRenderer>().sprite = Resources.Load("heart_resize2", typeof(Sprite)) as Sprite;
+        }
+
         float heart_x = -6.2f;
         for (int num=0; num < 3; num++)
         {
