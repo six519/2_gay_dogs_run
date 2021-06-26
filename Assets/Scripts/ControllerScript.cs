@@ -43,7 +43,7 @@ public class ControllerScript : MonoBehaviour
         }
         else
         {
-            Heart.GetComponent<SpriteRenderer>().sprite = Resources.Load("heart_resize2", typeof(Sprite)) as Sprite;
+            Heart.GetComponent<SpriteRenderer>().sprite = Resources.Load("heart_resize3", typeof(Sprite)) as Sprite;
         }
 
         float heart_x = -6.2f;
