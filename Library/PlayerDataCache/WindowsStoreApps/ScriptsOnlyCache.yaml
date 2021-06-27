@@ -98,6 +98,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 81
@@ -188,6 +190,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -318,7 +324,7 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: ea9e71e8cc41d2551d80032a3249f7d8
+      Hash: 758b864be523f25cd4fe39bbc83fe437
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BidaScript
@@ -576,7 +582,7 @@ ScriptsOnlyBuild:
     className: StartScript
   - hash:
       serializedVersion: 2
-      Hash: 980950d3288192911e9710986cb6c97c
+      Hash: ec9368dfbc36ce2a6ac27e9e40a1eb83
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ArrowScript
@@ -875,4 +881,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/GameScene.unity
   - Assets/Scenes/CharacterSelectionScene.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: C:/Users/ferdi/Downloads
+  playerPath: C:/Users/ferdi/OneDrive/Documents/Downloads
