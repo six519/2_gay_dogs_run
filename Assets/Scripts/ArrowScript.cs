@@ -75,4 +75,10 @@ public class ArrowScript : MonoBehaviour
             }
         }
     }
+
+    private void OnMouseDown()
+    {
+        BidaScript bs = GameObject.Find("bida").GetComponent<BidaScript>();
+        bs.Jump();
+    }
 }

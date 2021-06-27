@@ -20,6 +20,7 @@ public class BidaScript : MonoBehaviour
         baseAnimSpeed = previousAnimSpeed;
         rb = this.GetComponent<Rigidbody2D>();
         Physics2D.IgnoreCollision(GameObject.Find("close").GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(GameObject.Find("clicker").GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
 
         if (GlobalVariableScript.SelectedCharacter == 0)
         {
@@ -44,7 +45,7 @@ public class BidaScript : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
+    public void Jump()
     {
         if (canJump)
         {
@@ -55,6 +56,11 @@ public class BidaScript : MonoBehaviour
             thisAnimator.speed = 0;
             canJump = false;
         }
+    }
+
+    private void OnMouseDown()
+    {
+        Jump();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
