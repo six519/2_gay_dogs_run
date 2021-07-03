@@ -1508,19 +1508,19 @@ IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2607[7];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2612[7];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2614[8];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2615[1];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2616[4];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2617[3];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2617[4];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2618[3];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2619[3];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2620[3];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2621[3];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2622[19];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2624[2];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2625[5];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2622[3];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2623[19];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2625[2];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2626[5];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2627[1];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2629[1];
-IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[2630] = 
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2627[5];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2628[1];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2630[1];
+IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[2631] = 
 {
 	NULL,
 	g_FieldOffsetTable1,
@@ -4138,18 +4138,19 @@ IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[2630] =
 	NULL,
 	g_FieldOffsetTable2614,
 	g_FieldOffsetTable2615,
-	g_FieldOffsetTable2616,
+	NULL,
 	g_FieldOffsetTable2617,
 	g_FieldOffsetTable2618,
 	g_FieldOffsetTable2619,
 	g_FieldOffsetTable2620,
 	g_FieldOffsetTable2621,
 	g_FieldOffsetTable2622,
+	g_FieldOffsetTable2623,
 	NULL,
-	g_FieldOffsetTable2624,
 	g_FieldOffsetTable2625,
 	g_FieldOffsetTable2626,
 	g_FieldOffsetTable2627,
+	g_FieldOffsetTable2628,
 	NULL,
-	g_FieldOffsetTable2629,
+	g_FieldOffsetTable2630,
 };

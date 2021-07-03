@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - BackCloseButtonScript
     - BidaScript
     - CharacterSelectionScript
+    - ClickerScript
     - CloudScript
     - ControllerScript
     - ExitButtonScript
@@ -31,6 +32,9 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelinePreferences
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -183,6 +187,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4654}
     - Class: 114
       Script: {instanceID: 4990}
+    - Class: 114
+      Script: {instanceID: 5348}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -229,7 +235,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 5390}
+      Script: {instanceID: 5392}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -838,6 +844,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: BufferManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClickerScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f

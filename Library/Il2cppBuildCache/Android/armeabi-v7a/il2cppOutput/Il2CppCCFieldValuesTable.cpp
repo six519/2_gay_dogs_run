@@ -1132,19 +1132,19 @@ IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1950[7];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1955[7];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1957[8];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1958[1];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1959[4];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1960[3];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1960[4];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1961[3];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1962[3];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1963[3];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1964[3];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1965[19];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1967[2];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1968[5];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1965[3];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1966[19];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1968[2];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1969[5];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1970[1];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1972[1];
-IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[1973] = 
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1970[5];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1971[1];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable1973[1];
+IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[1974] = 
 {
 	NULL,
 	NULL,
@@ -3105,18 +3105,19 @@ IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[1973] =
 	NULL,
 	g_FieldOffsetTable1957,
 	g_FieldOffsetTable1958,
-	g_FieldOffsetTable1959,
+	NULL,
 	g_FieldOffsetTable1960,
 	g_FieldOffsetTable1961,
 	g_FieldOffsetTable1962,
 	g_FieldOffsetTable1963,
 	g_FieldOffsetTable1964,
 	g_FieldOffsetTable1965,
+	g_FieldOffsetTable1966,
 	NULL,
-	g_FieldOffsetTable1967,
 	g_FieldOffsetTable1968,
 	g_FieldOffsetTable1969,
 	g_FieldOffsetTable1970,
+	g_FieldOffsetTable1971,
 	NULL,
-	g_FieldOffsetTable1972,
+	g_FieldOffsetTable1973,
 };
